@@ -2,6 +2,20 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(function(){
+        $('a[href^="#"]').click(function() {
+          var speed = 500;
+          var headerHight = 90;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top-headerHight;
+          $('body,html').animate({scrollTop:position}, 550, 'swing');
+          return false;
+      });
+    });
+	</script>	
 	<title>Portfolio #1</title>
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -11,6 +25,7 @@
 		<div class="header-logo">Portfolio #1</div>
 		<ul>
 			<li><a href="#about">About</a></li>
+			<li><a href="#record">Record</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</div>
@@ -29,15 +44,52 @@
 				<li><font class="list">Name :</font> Mitsuhiro Shibata</li>
 				<li><font class="list">Age :</font>  29</li>
 				<li><font class="list">Reside in :</font>  Tokyo</li>
-				<li><font class="list">Career background :</font>  Sales person -> Consultant -> Personal trainer</li>
-				<li><font class="list">Hobbies :</font>  Powerlifting, English communication</li>
-				<li><font class="list">Programming :</font>  Studied HTML, CSS, Javascript, PHP, jQuery on Progate</li>
+				<li><font class="list">Occupation :</font>  Amateur powerlifter</li>
+				<li><font class="list">Hobbies :</font>  English communication, Programming</li>
 			</ul>
+		</div>
+
+		<div class="record">
+			<h2 class="section-title" id="record">Record</h2>
+			<table>
+				<thead>
+					<tr>
+						<td></td>
+						<th scope="col">2019/04/13<br>TPC</th>
+						<th scope="col">2020<br>(Goal)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Squat</th>
+						<td data-label="2019/04/13" class="data1"><span>195</span></td>
+						<td data-label="2020" class="data2">220</td>
+					</tr>
+					<tr>
+						<th>Bench Press</th>
+						<td data-label="2019/04/13" class="data1">125</td>
+						<td data-label="2020" class="data2">150</td>
+					</tr>
+					<tr>
+						<th>Deadlift</th>
+						<td data-label="2019/04/13" class="data1">200</td>
+						<td data-label="2020" class="data2">220</td>
+					</tr>
+				</tbody>
+			</table>   
+
 		</div>
 
 		<div class="contact">
 			<h2 class="section-title" id="contact">Contact</h2>
-			<ul><li>miroshiba [at] gmail.com</li></ul>
+			<p>Name</p>
+			<input>
+			<p>Email</p>
+			<input>
+			<p>Message</p>
+			<textarea></textarea>
+			<p></p>
+			<input class="contact-submit" type="submit" value="送信">
 		</div>
 
 	</div>

@@ -64,8 +64,63 @@ li{
 .list{
 	font-weight:bold;
 }
+.record{
+	padding-bottom:100px;
+}
+table {
+  border-collapse: collapse;
+  margin-top: 0;
+  padding: 0;
+  width: 650px;
+  table-layout: fixed;
+  color: #000;
+}
+
+table tr {
+  background-color: #fff;
+  padding: .35em;
+  border-bottom: 1px solid #bbb;
+}
+table thead{
+  border-bottom: 5px solid #C72626;
+}
+table tr:last-child{
+   border-bottom: none
+}
+table th,
+table td {
+  padding: 1em 10px 1em 1em;
+  border-right: 1px solid #bbb;
+}
+table th:last-child,
+table td:last-child{
+    border: none;
+}
+tbody th {
+    color: #C72626;
+}
+.data1{
+   text-align: center;
+}
+.data2{
+   text-align: center;
+}
 .contact{
 	padding-bottom:100px;
+}
+
+input, textarea{
+	width:400px;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding: 20px 20px;
+	font-size:15px;
+	border:1px solid #dee7ec;
+}
+
+.contact-submit{
+	background-color:#dee7ec;
+	color:#889eab;
 }
 
 .footer{
