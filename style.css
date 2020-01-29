@@ -1,6 +1,15 @@
+*{
+  box-sizing:border-box;
+}
+
+
 body {
 	background-color: #ffffff;
 }
+ .header, .main, .footer{
+	width : 100%;
+}
+
 .header{
 	background-color:#272727;
 	color:#fff;
@@ -21,9 +30,16 @@ body {
 	float:left;
 	padding:20px 20px;
 }
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 25px 35px;
+ display:none;
+}
 .top-image{
 	padding:180px 0 100px 0;
-	height:300px;
+	height:600px;
 	background-image:url(image/top-image.jpg);
 	background-size:cover;
 	text-align:center;

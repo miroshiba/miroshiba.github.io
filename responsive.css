@@ -1,0 +1,19 @@
+@media (max-width:1000px) {
+  /* lessonクラスのCSSを指定してください */
+.top-image h1{
+	font-size:75px;
+  }
+  
+}
+
+@media all and (max-width: 670px) {
+
+.header-menu{
+    display:none;
+  }
+
+.menu-icon{
+    display:block;
+  }
+  
+	}
