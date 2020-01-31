@@ -3,17 +3,19 @@
 .top-image h1{
 	font-size:75px;
   }
-  
+
 }
 
-@media all and (max-width: 670px) {
+@media (max-width: 670px) {
 
 .header-menu{
     display:none;
   }
+	}
 
-.menu-icon{
-    display:block;
+  @media screen and (min-width:670px) {
+    #nav-open {
+      display:none;
+    }
   }
   
-	}

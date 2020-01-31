@@ -16,23 +16,33 @@
 				return false;
 			});
 		});
-	</script>	
+	</script>
 	<title>Portfolio #1</title>
 	<link rel="stylesheet" href="style.css?33">
 	<link rel="stylesheet" href="responsive.css?33">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
 
 	<div class="header">
 		<div class="header-logo">Portfolio #1</div>
-		<span class="menu-icon"><i class="fa fa-bars"></i></span>
 		<div class="header-menu">
 			<ul>
 				<li><a href="#about">About</a></li>
 				<li><a href="#powerlifting">Powerlifting</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
+		</div>
+		<div id="nav-drawer">
+			<input id="nav-input" type="checkbox" class="nav-unshown">
+			<label id="nav-open" for="nav-input"><span></span></label>
+			<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+			<div id="nav-content">
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#powerlifting">Powerlifting</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
