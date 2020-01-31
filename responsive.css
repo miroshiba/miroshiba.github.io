@@ -1,21 +1,24 @@
 @media (max-width:1000px) {
-  /* lessonクラスのCSSを指定してください */
-.top-image h1{
-	font-size:75px;
-  }
-
+    /* lessonクラスのCSSを指定してください */
+    .top-image h1 {
+        font-size: 75px;
+    }
 }
 
 @media (max-width: 670px) {
-
-.header-menu{
-    display:none;
-  }
-	}
-
-  @media screen and (min-width:670px) {
-    #nav-open {
-      display:none;
+    .header-menu {
+        display: none;
     }
-  }
-  
+    .main {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (min-width:670px) {
+    #nav-open {
+        display: none;
+    }
+}
+
+ßß

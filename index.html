@@ -1,120 +1,133 @@
 <!DOCTYPE html>
 <html>
+ß
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script>
-		$(function(){
-			$('a[href^="#"]').click(function() {
-				var speed = 500;
-				var headerHight = 90;
-				var href= $(this).attr("href");
-				var target = $(href == "#" || href == "" ? 'html' : href);
-				var position = target.offset().top-headerHight;
-				$('body,html').animate({scrollTop:position}, 550, 'swing');
-				return false;
-			});
-		});
-	</script>
-	<title>Portfolio #1</title>
-	<link rel="stylesheet" href="style.css?333">
-	<link rel="stylesheet" href="responsive.css?333">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('a[href^="#"]').click(function() {
+                var speed = 500;
+                var headerHight = 90;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - headerHight;
+                $('body,html').animate({
+                    scrollTop: position
+                }, 550, 'swing');
+                return false;
+            });
+        });
+    </script>
+    <title>Portfolio #1</title>
+    <link rel="stylesheet" href="style.css?333">
+    <link rel="stylesheet" href="responsive.css?333">
 </head>
+
 <body>
 
-	<div class="header">
-		<div class="header-logo">Portfolio #1</div>
-		<div class="header-menu">
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#powerlifting">Powerlifting</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</div>
-		<div id="nav-drawer">
-			<input id="nav-input" type="checkbox" class="nav-unshown">
-			<label id="nav-open" for="nav-input"><span></span></label>
-			<label class="nav-unshown" id="nav-close" for="nav-input"></label>
-			<div id="nav-content">
-				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#powerlifting">Powerlifting</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
+    <div class="header">
+        <div class="header-logo">Portfolio #1</div>
+        <div class="header-menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#powerlifting">Powerlifting</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#powerlifting">Powerlifting</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
 
-<div class="top-image">
-	<h1>Stronger<font class="red">.</font></h1>
-</div>
+    <div class="top-image">
+        <h1>Stronger
+            <font class="red">.</font>
+        </h1>
+    </div>
 
-<div class="main">
+    <div class="main">
 
-	<div class="about">
-		<h2 class="section-title" id="about">About</h2>
-		<img src="image/face.png">
-		<p></p>
-		<ul>
-			<li><font class="list">Name :</font> Mitsuhiro Shibata</li>
-			<li><font class="list">Age :</font>  29</li>
-			<li><font class="list">Reside in :</font>  Tokyo</li>
-			<li><font class="list">Hobbies :</font>  Powerlifting, English communication</li>
-			<li><font class="list">Programming :</font>  Studied HTML, CSS, Javascript, PHP & jQuery on Progate</li>
-		</ul>
-	</div>
+        <div class="about">
+            <h2 class="section-title" id="about">About</h2>
+            <img src="image/face.png">
+            <p></p>
+            <ul>
+                <li>
+                    <font class="list">Name :</font> Mitsuhiro Shibata</li>
+                <li>
+                    <font class="list">Age :</font> 29</li>
+                <li>
+                    <font class="list">Reside in :</font> Tokyo</li>
+                <li>
+                    <font class="list">Hobbies :</font> Powerlifting, English communication</li>
+                <li>
+                    <font class="list">Programming :</font> Studied HTML, CSS, Javascript, PHP & jQuery on Progate</li>
+            </ul>
+        </div>
 
-	<div class="powerlifting">
-		<h2 class="section-title" id="powerlifting">Powerlifting</h2>
-		<table>
-			<thead>
-				<tr>
-					<td></td>
-					<th scope="col">2019/04/13<br>TPC</th>
-					<th scope="col">2020<br>(Goal)</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<th>Squat(kg)</th>
-					<td data-label="2019/04/13" class="data1"><span>195</span></td>
-					<td data-label="2020" class="data2">220</td>
-				</tr>
-				<tr>
-					<th>Bench Press(kg)</th>
-					<td data-label="2019/04/13" class="data1">125</td>
-					<td data-label="2020" class="data2">150</td>
-				</tr>
-				<tr>
-					<th>Deadlift(kg)</th>
-					<td data-label="2019/04/13" class="data1">200</td>
-					<td data-label="2020" class="data2">220</td>
-				</tr>
-			</tbody>
-		</table>   
+        <div class="powerlifting">
+            <h2 class="section-title" id="powerlifting">Powerlifting</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <th scope="col">2019/04/13<br>TPC</th>
+                        <th scope="col">2020<br>(Goal)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Squat(kg)</th>
+                        <td data-label="2019/04/13" class="data1"><span>195</span></td>
+                        <td data-label="2020" class="data2">220</td>
+                    </tr>
+                    <tr>
+                        <th>Bench Press(kg)</th>
+                        <td data-label="2019/04/13" class="data1">125</td>
+                        <td data-label="2020" class="data2">150</td>
+                    </tr>
+                    <tr>
+                        <th>Deadlift(kg)</th>
+                        <td data-label="2019/04/13" class="data1">200</td>
+                        <td data-label="2020" class="data2">220</td>
+                    </tr>
+                </tbody>
+            </table>
 
-	</div>
+        </div>
 
-	<div class="contact">
-		<h2 class="section-title" id="contact">Contact</h2>
-		<p>Name</p>
-		<input>
-		<p>Email</p>
-		<input>
-		<p>Message</p>
-		<textarea></textarea>
-		<p></p>
-		<input class="contact-submit" type="submit" value="送信">
-	</div>
+        <div class="contact">
+            <h2 class="section-title" id="contact">Contact</h2>
+            <p>Name</p>
+            <input>
+            <p>Email</p>
+            <input>
+            <p>Message</p>
+            <textarea></textarea>
+            <p></p>
+            <input class="contact-submit" type="submit" value="送信">
+        </div>
 
-</div>
+    </div>
 
-<div class="footer">
-	<div class="footer-text">
-		Copyright © 2020 Mitsuhiro Shibata All Rights Reserved.
-	</div>
+    <div class="footer">
+        <div class="footer-text">
+            Copyright © 2020 Mitsuhiro Shibata All Rights Reserved.
+        </div>
 
 </body>
+
 </html>
