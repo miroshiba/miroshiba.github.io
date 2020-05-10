@@ -9,7 +9,6 @@ svg.svg-inline--fa {
     color: #D91D12;
 }
 
-
 /*--- Navigation --*/
 
 .navbar {
@@ -29,11 +28,9 @@ svg.svg-inline--fa {
     padding-top: .8rem;
 }
 
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {
     color: #D91D12;
 }
-
 
 /*--- Landing Page --*/
 
@@ -74,7 +71,6 @@ svg.svg-inline--fa {
     letter-spacing: .1rem;
     padding-bottom: 1.6rem;
 }
-
 
 /*--- About Section --*/
 
@@ -126,7 +122,6 @@ h3.heading {
     font-size: 1.1rem;
 }
 
-
 /*--- Skills Section --*/
 
 .fixed-background h3 {
@@ -136,10 +131,6 @@ h3.heading {
 .fixed-background p {
     margin-top: 1.5rem;
 }
-
-
-/*--- Works Section --*/
-
 
 /*--- Contact Section --*/
 
@@ -151,14 +142,6 @@ h3.heading {
     background-attachment: fixed;
     background-position: center center;
 }
-
-
-/*--- 
-.fixed-2 {
-    background-image: url(img/street.jpg);
-    z-index: -1;
-}
---*/
 
 .dark {
     background-color: rgba(0, 0, 0, 0.7);
@@ -190,14 +173,12 @@ h3.heading {
     display: inline-block;
 }
 
-
 /*--- Footer Section --*/
 
 footer {
     color: white;
     padding: 2rem 0 0 0;
 }
-
 
 /*--- Media Queries --*/
 
@@ -219,23 +200,3 @@ footer {
         font-size: 1.5rem;
     }
 }
-
-
-/*============ BOOTSTRAP BREAK POINTS:
-
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-=============*/
